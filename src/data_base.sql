@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS hashes (
+    id SERIAL PRIMARY KEY,
+    hash_value INTEGER NOT NULL,
+    data TEXT NOT NULL
+);
