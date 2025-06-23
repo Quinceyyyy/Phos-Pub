@@ -3,13 +3,15 @@ use std::process;
 use sqlx::postgres::PgPoolOptions;
 use dotenv::dotenv;
 
+mod components;
 
-
-mod handle_db;
-mod hash;
-mod help;
-mod handle_flags;
-mod handle_encryption;
+use components:: {
+    handle_db,
+    hash,
+    handle_encryption,
+    handle_flags,
+    help,
+};
 
 
 pub const GEM: &str = "Phosphophyllite";
